@@ -6,30 +6,43 @@ export default function Projects() {
   const ref = useRef<HTMLDivElement | null>(null);
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 
-  const projects = [
-    {
-      title: 'UrbanOasis-website',
-      subtitle: 'Booking Rental Properties',
-      description:
-        'Urbanoasis is a feature-rich web application for listing and booking rental properties, inspired by Airbnb. Built using Node.js, Express, MongoDB, and EJS, it allows users to search for properties, filter categories, book stays, and manage listings seamlessly.',
-      technologies: ['Node.js', 'Express', 'MongoDB', 'EJS', 'REST APIs'],
-      icon: TrendingUp,
-      gradient: 'from-emerald-500 to-teal-600',
-      github: 'https://github.com/sraushansungh7/UrbanOasis-website',
-      demo: ''
-    },
-    {
-      title: 'url_shortner',
-      subtitle: 'URL Shortener',
-      description:
-        'A lightweight and efficient URL Shortener web application built using Node.js, Express, and MongoDB. It converts long URLs into short, shareable links and includes redirect handling and click analytics.',
-      technologies: ['Node.js', 'Supabase', 'REST APIs'],
-      icon: Network,
-      gradient: 'from-blue-500 to-indigo-600',
-      github: 'https://github.com/sraushansungh7/url_shotner',
-      demo: ''
-    }
-  ];
+ const projects = [
+  {
+    title: 'AI Powered Resume Analyzer',
+    subtitle: 'AI Resume Analysis Platform',
+    description:
+      'An intelligent full-stack web application that analyzes resumes using AI and provides smart feedback. Built with React, Node.js, Express, MongoDB, and Gemini API. Features include resume upload, AI-based scoring, and real-time feedback.',
+    technologies: ['React', 'Node.js', 'Express', 'MongoDB', 'Gemini API', 'JWT Auth'],
+    icon: TrendingUp,
+    gradient: 'from-purple-500 to-indigo-600',
+    github: 'https://github.com/sraushansungh7/AI-Powered-Resume-Analyzer-',
+    demo: 'https://ai-powered-resume-analyzer-rho.vercel.app'
+  },
+
+  {
+    title: 'UrbanOasis-website',
+    subtitle: 'Booking Rental Properties',
+    description:
+      'Urbanoasis is a feature-rich web application for listing and booking rental properties, inspired by Airbnb. Built using Node.js, Express, MongoDB, and EJS.',
+    technologies: ['Node.js', 'Express', 'MongoDB', 'EJS', 'REST APIs'],
+    icon: TrendingUp,
+    gradient: 'from-emerald-500 to-teal-600',
+    github: 'https://github.com/sraushansungh7/UrbanOasis-website',
+    demo: ''
+  },
+
+  {
+    title: 'url_shortner',
+    subtitle: 'URL Shortener',
+    description:
+      'A lightweight URL Shortener built with Node.js, Express, and MongoDB with redirect handling and analytics.',
+    technologies: ['Node.js', 'Supabase', 'REST APIs'],
+    icon: Network,
+    gradient: 'from-blue-500 to-indigo-600',
+    github: 'https://github.com/sraushansungh7/url_shotner',
+    demo: ''
+  }
+];
 
   return (
     <section id="projects" className="py-24 bg-white" ref={ref}>
